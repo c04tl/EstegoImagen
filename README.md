@@ -11,13 +11,36 @@ Este cifrado consiste en aplicar un desplazamiento al alfabeto del mensaje, es d
 # Mendacium.py
 Para poder ocultar el mensaje habremos de escribir lo siguiente en la línea de comandos:
 
->>> python Mendacium.py -e foto.png -s fotoSalida.png -m mensaje.txt -k 8
+![Preview](https://cdn.rawgit.com/whoisML/EstegoImagen/master/imagenes/1.png)
 
 Dónde los parametros -e, -s, -m y -k indican: el nombre de la foto de entrada, el nombre de la foto de salida, el archivo que contiene el mensaje y la llave que será equivalente al desplazamiento del cifrado César.
+
+Presionamos la tecla Intro y nos aparecerá el mensaje original, el criptograma(mensaje con desplazamiento), firma MD5 de la foto original y MD5 de la foto con el mensaje:
+
+![Preview](https://cdn.rawgit.com/whoisML/EstegoImagen/master/imagenes/2.png)
+
+Una vez terminado el proceso, se desplegará una vista previa de la imagen que contiene el mensaje:
+
+![Preview](https://cdn.rawgit.com/whoisML/EstegoImagen/master/imagenes/3.png)
 
 # Veritatis.py
 Para poder leer el mensaje habremos de escribir lo siguiente en la línea de comandos:
 
-https://cdn.rawgit.com/whoisML/EstegoImagen/master/imagenes/1.png
+![Preview](https://cdn.rawgit.com/whoisML/EstegoImagen/master/imagenes/4.png)
 
-Dónde los parametros -e, -s, -m y -k indican: el nombre de la foto de entrada, el nombre de la foto de salida, el archivo que contiene el mensaje y la llave que será equivalente al desplazamiento del cifrado César.
+Dónde los parametros -e y -k indican: el nombre de la foto con el mensaje y la llave para descifrar el mensaje oculto. Este proceso es más simple, pues solo lee el mensaje y lo imprime en la consola:
+
+![Preview](https://cdn.rawgit.com/whoisML/EstegoImagen/master/imagenes/5.png)
+
+Además, si introducimos una llave incorrecta, el mensaje no tiene sentido:
+
+![Preview](https://cdn.rawgit.com/whoisML/EstegoImagen/master/imagenes/6.png)
+
+# Imagenes
+Al termino de la ejecución de Mendacium.py podemos observar que la imagen que contiene el mensaje no es muy diferente a la original, pero se puede apreciar que no son la misma imagen debido a sus firmas de comprobación MD5.
+
+Imagen Original(Hoshi.png):
+![Preview](https://cdn.rawgit.com/whoisML/EstegoImagen/master/imagenes/Hoshi.png)
+
+Imagen con mensaje(Hoshi2.png)
+![Preview](https://cdn.rawgit.com/whoisML/EstegoImagen/master/imagenes/Hoshi2.png)
