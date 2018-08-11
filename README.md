@@ -1,9 +1,5 @@
 # EstegoImagen
-Esteganografía aplicando el cifrado César a un mensaje y después ocultandólo en una imágen
-
-# Introducción
-
-Este repositorio consiste de dos programas: Mendacium.py y Veritatis.py cuyos nombres están en latín y significan Mentira y Verdad respectivamente.
+Esteganografía aplicando el cifrado César a un mensaje y después ocultandólo en una imágen. Este repositorio consiste de dos programas: Mendacium.py y Veritatis.py cuyos nombres están en latín y significan Mentira y Verdad respectivamente.
 
 # Cifrado César
 Este cifrado consiste en aplicar un desplazamiento al alfabeto del mensaje, es decir, en el caso de un mensaje en español el afabeto a desplazar cuenta con 27 carácteres ya que añadimos la letra ñ, si fuera el caso del idioma inglés solo tomariamos en cuenta 26 carácteres. El desplazamiento será considerado la llave para nuestro mensaje para guardarlo como para leerlo de una imagen.
